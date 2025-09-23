@@ -2,5 +2,6 @@
   <PropertyGroup>
     <PackageId>KubernetesCRDModelGen.Models.projectcalico.org</PackageId>
     <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.projectcalico.org</RepositoryUrl>
+    <Description>C# models for Kubernetes CRDs in group projectcalico.org</Description>
   </PropertyGroup>
 </Project>
