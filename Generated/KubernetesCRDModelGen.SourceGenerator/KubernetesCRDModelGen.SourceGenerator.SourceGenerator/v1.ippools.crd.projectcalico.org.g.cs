@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1IPPoolList : IKubernetesObject<V1ListMeta>, IItems<V1IPPool>
@@ -32,7 +32,7 @@ public partial class V1IPPoolList : IKubernetesObject<V1ListMeta>, IItems<V1IPPo
 
     /// <summary>List of V1IPPool objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1IPPool>? Items { get; set; }
+    public required IList<V1IPPool> Items { get; set; }
 }
 
 /// <summary>
@@ -42,7 +42,7 @@ public partial class V1IPPoolList : IKubernetesObject<V1ListMeta>, IItems<V1IPPo
 /// - &quot;Tunnel&quot; means the pool is used for tunnel IP addresses.
 /// - &quot;LoadBalancer&quot; means the pool is used for load balancer IP addresses.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1IPPoolSpecAllowedUsesEnum>))]
 public enum V1IPPoolSpecAllowedUsesEnum
 {
@@ -55,7 +55,7 @@ public enum V1IPPoolSpecAllowedUsesEnum
 }
 
 /// <summary>Determines the mode how IP addresses should be assigned from this pool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1IPPoolSpecAssignmentModeEnum>))]
 public enum V1IPPoolSpecAssignmentModeEnum
 {
@@ -69,7 +69,7 @@ public enum V1IPPoolSpecAssignmentModeEnum
 /// Contains configuration for IPIP tunneling for this pool.
 /// For IPv6 pools, IPIP tunneling must be disabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1IPPoolSpecIpipModeEnum>))]
 public enum V1IPPoolSpecIpipModeEnum
 {
@@ -82,7 +82,7 @@ public enum V1IPPoolSpecIpipModeEnum
 }
 
 /// <summary>Contains configuration for VXLAN tunneling for this pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1IPPoolSpecVxlanModeEnum>))]
 public enum V1IPPoolSpecVxlanModeEnum
 {
@@ -95,7 +95,7 @@ public enum V1IPPoolSpecVxlanModeEnum
 }
 
 /// <summary>IPPoolSpec contains the specification for an IPPool resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1IPPoolSpec
 {
@@ -161,7 +161,7 @@ public partial class V1IPPoolSpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1IPPoolStatusConditionsStatusEnum>))]
 public enum V1IPPoolStatusConditionsStatusEnum
 {
@@ -174,7 +174,7 @@ public enum V1IPPoolStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1IPPoolStatusConditions
 {
@@ -219,7 +219,7 @@ public partial class V1IPPoolStatusConditions
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1IPPoolStatus
 {
@@ -227,7 +227,7 @@ public partial class V1IPPoolStatus
     public IList<V1IPPoolStatusConditions>? Conditions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1IPPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1IPPoolSpec?>, IStatus<V1IPPoolStatus?>

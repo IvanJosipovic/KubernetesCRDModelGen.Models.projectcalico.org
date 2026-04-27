@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
 /// <summary>NetworkSet is the Namespaced-equivalent of the GlobalNetworkSet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1NetworkSetList : IKubernetesObject<V1ListMeta>, IItems<V1NetworkSet>
@@ -33,11 +33,11 @@ public partial class V1NetworkSetList : IKubernetesObject<V1ListMeta>, IItems<V1
 
     /// <summary>List of V1NetworkSet objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1NetworkSet>? Items { get; set; }
+    public required IList<V1NetworkSet> Items { get; set; }
 }
 
 /// <summary>NetworkSetSpec contains the specification for a NetworkSet resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1NetworkSetSpec
 {
@@ -50,7 +50,7 @@ public partial class V1NetworkSetSpec
 }
 
 /// <summary>NetworkSet is the Namespaced-equivalent of the GlobalNetworkSet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1NetworkSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1NetworkSetSpec?>
