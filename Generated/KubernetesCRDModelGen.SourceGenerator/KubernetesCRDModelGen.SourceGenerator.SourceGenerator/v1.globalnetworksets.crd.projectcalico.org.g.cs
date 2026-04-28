@@ -13,7 +13,7 @@ namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
 /// GlobalNetworkSet contains a set of arbitrary IP sub-networks/CIDRs that share labels to
 /// allow rules to refer to them via selectors.  The labels of GlobalNetworkSet are not namespaced.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1GlobalNetworkSetList : IKubernetesObject<V1ListMeta>, IItems<V1GlobalNetworkSet>
@@ -40,7 +40,7 @@ public partial class V1GlobalNetworkSetList : IKubernetesObject<V1ListMeta>, IIt
 }
 
 /// <summary>GlobalNetworkSetSpec contains the specification for a NetworkSet resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1GlobalNetworkSetSpec
 {
@@ -56,7 +56,7 @@ public partial class V1GlobalNetworkSetSpec
 /// GlobalNetworkSet contains a set of arbitrary IP sub-networks/CIDRs that share labels to
 /// allow rules to refer to them via selectors.  The labels of GlobalNetworkSet are not namespaced.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1GlobalNetworkSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1GlobalNetworkSetSpec?>

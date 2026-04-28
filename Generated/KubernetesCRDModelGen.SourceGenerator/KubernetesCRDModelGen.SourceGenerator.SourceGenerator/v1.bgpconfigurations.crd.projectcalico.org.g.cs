@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
 /// <summary>BGPConfiguration contains the configuration for any BGP routing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1BGPConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1BGPConfiguration>
@@ -41,7 +41,7 @@ public partial class V1BGPConfigurationList : IKubernetesObject<V1ListMeta>, IIt
 /// or only on the node&apos;s canonical IP address Node.Spec.BGP.IPvXAddress (NodeIP).
 /// Default behaviour is to listen for BGP connections on all addresses.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPConfigurationSpecBindModeEnum>))]
 public enum V1BGPConfigurationSpecBindModeEnum
 {
@@ -52,7 +52,7 @@ public enum V1BGPConfigurationSpecBindModeEnum
 }
 
 /// <summary>Community contains standard or large community value and its name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPConfigurationSpecCommunities
 {
@@ -71,7 +71,7 @@ public partial class V1BGPConfigurationSpecCommunities
 }
 
 /// <summary>Selects a key of a secret in the node pod&apos;s namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPConfigurationSpecNodeMeshPasswordSecretKeyRef
 {
@@ -98,7 +98,7 @@ public partial class V1BGPConfigurationSpecNodeMeshPasswordSecretKeyRef
 /// Optional BGP password for full node-to-mesh peerings.
 /// This field can only be set on the default BGPConfiguration instance and requires that NodeMesh is enabled
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPConfigurationSpecNodeMeshPassword
 {
@@ -108,7 +108,7 @@ public partial class V1BGPConfigurationSpecNodeMeshPassword
 }
 
 /// <summary>PrefixAdvertisement configures advertisement properties for the specified CIDR.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPConfigurationSpecPrefixAdvertisements
 {
@@ -132,7 +132,7 @@ public partial class V1BGPConfigurationSpecPrefixAdvertisements
 /// confd and BIRD program that route. When ProgramClusterRoutes is Disabled, it is expected that Felix will program that route.
 /// Felix always programs such routes for IP Pools with vxlanMode: Always or vxlanMode: CrossSubnet. [Default: Enabled]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPConfigurationSpecProgramClusterRoutesEnum>))]
 public enum V1BGPConfigurationSpecProgramClusterRoutesEnum
 {
@@ -143,7 +143,7 @@ public enum V1BGPConfigurationSpecProgramClusterRoutesEnum
 }
 
 /// <summary>ServiceClusterIPBlock represents a single allowed ClusterIP CIDR block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPConfigurationSpecServiceClusterIPs
 {
@@ -152,7 +152,7 @@ public partial class V1BGPConfigurationSpecServiceClusterIPs
 }
 
 /// <summary>ServiceExternalIPBlock represents a single allowed External IP CIDR block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPConfigurationSpecServiceExternalIPs
 {
@@ -166,7 +166,7 @@ public partial class V1BGPConfigurationSpecServiceExternalIPs
 /// the full CIDR range. This is useful for anycast failover mechanisms where failed service
 /// routes need to be withdrawn. [Default: Enabled]
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPConfigurationSpecServiceLoadBalancerAggregationEnum>))]
 public enum V1BGPConfigurationSpecServiceLoadBalancerAggregationEnum
 {
@@ -177,7 +177,7 @@ public enum V1BGPConfigurationSpecServiceLoadBalancerAggregationEnum
 }
 
 /// <summary>ServiceLoadBalancerIPBlock represents a single allowed LoadBalancer IP CIDR block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPConfigurationSpecServiceLoadBalancerIPs
 {
@@ -186,7 +186,7 @@ public partial class V1BGPConfigurationSpecServiceLoadBalancerIPs
 }
 
 /// <summary>BGPConfigurationSpec contains the values of the BGP configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPConfigurationSpec
 {
@@ -314,7 +314,7 @@ public partial class V1BGPConfigurationSpec
 }
 
 /// <summary>BGPConfiguration contains the configuration for any BGP routing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1BGPConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1BGPConfigurationSpec?>
