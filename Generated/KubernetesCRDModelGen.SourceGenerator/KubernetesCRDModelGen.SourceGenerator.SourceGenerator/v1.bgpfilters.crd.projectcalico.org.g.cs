@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1BGPFilterList : IKubernetesObject<V1ListMeta>, IItems<V1BGPFilter>
@@ -35,7 +35,7 @@ public partial class V1BGPFilterList : IKubernetesObject<V1ListMeta>, IItems<V1B
     public required IList<V1BGPFilter> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecExportV4ActionEnum>))]
 public enum V1BGPFilterSpecExportV4ActionEnum
 {
@@ -52,7 +52,7 @@ public enum V1BGPFilterSpecExportV4ActionEnum
 /// peer (e.g. on a route reflector re-advertising to an eBGP peer) or added locally
 /// by an import filter or an earlier export rule&apos;s AddCommunity operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV4Communities
 {
@@ -67,7 +67,7 @@ public partial class V1BGPFilterSpecExportV4Communities
 /// &quot;NotEqual&quot; and &quot;NotIn&quot; are their negations.  Only meaningful when CIDR is also specified.
 /// Required when CIDR is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecExportV4MatchOperatorEnum>))]
 public enum V1BGPFilterSpecExportV4MatchOperatorEnum
 {
@@ -82,7 +82,7 @@ public enum V1BGPFilterSpecExportV4MatchOperatorEnum
 }
 
 /// <summary>AddCommunity adds the specified BGP community to the route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV4OperationsAddCommunity
 {
@@ -92,7 +92,7 @@ public partial class V1BGPFilterSpecExportV4OperationsAddCommunity
 }
 
 /// <summary>PrependASPath prepends the specified AS numbers to the route&apos;s AS path.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV4OperationsPrependASPath
 {
@@ -109,7 +109,7 @@ public partial class V1BGPFilterSpecExportV4OperationsPrependASPath
 /// SetPriority sets the route&apos;s priority (metric), in the same units as the
 /// ...RoutePriority fields in FelixConfiguration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV4OperationsSetPriority
 {
@@ -125,7 +125,7 @@ public partial class V1BGPFilterSpecExportV4OperationsSetPriority
 /// BGPFilterOperation is a discriminated union representing a single route modification.
 /// Exactly one field must be set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV4Operations
 {
@@ -149,7 +149,7 @@ public partial class V1BGPFilterSpecExportV4Operations
 /// If non-empty, this filter rule will only apply to routes being imported from or exported
 /// to a BGP peer of the specified type.  If empty, the rule applies to all peers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecExportV4PeerTypeEnum>))]
 public enum V1BGPFilterSpecExportV4PeerTypeEnum
 {
@@ -167,7 +167,7 @@ public enum V1BGPFilterSpecExportV4PeerTypeEnum
 /// PrefixLength is ignored.  If PrefixLength is nil and CIDR is set, the CIDR&apos;s own
 /// prefix length is used as the minimum and /32 (for V4) as the maximum.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV4PrefixLength
 {
@@ -184,7 +184,7 @@ public partial class V1BGPFilterSpecExportV4PrefixLength
 /// For import rules, this field is redundant because imported routes are by definition
 /// from BGP peers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecExportV4SourceEnum>))]
 public enum V1BGPFilterSpecExportV4SourceEnum
 {
@@ -196,7 +196,7 @@ public enum V1BGPFilterSpecExportV4SourceEnum
 /// BGPFilterRuleV4 defines a BGP filter rule consisting of match criteria, a terminal action,
 /// and optional operations to apply to matching routes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV4
 {
@@ -288,7 +288,7 @@ public partial class V1BGPFilterSpecExportV4
     public V1BGPFilterSpecExportV4SourceEnum? Source { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecExportV6ActionEnum>))]
 public enum V1BGPFilterSpecExportV6ActionEnum
 {
@@ -305,7 +305,7 @@ public enum V1BGPFilterSpecExportV6ActionEnum
 /// peer (e.g. on a route reflector re-advertising to an eBGP peer) or added locally
 /// by an import filter or an earlier export rule&apos;s AddCommunity operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV6Communities
 {
@@ -320,7 +320,7 @@ public partial class V1BGPFilterSpecExportV6Communities
 /// &quot;NotEqual&quot; and &quot;NotIn&quot; are their negations.  Only meaningful when CIDR is also specified.
 /// Required when CIDR is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecExportV6MatchOperatorEnum>))]
 public enum V1BGPFilterSpecExportV6MatchOperatorEnum
 {
@@ -335,7 +335,7 @@ public enum V1BGPFilterSpecExportV6MatchOperatorEnum
 }
 
 /// <summary>AddCommunity adds the specified BGP community to the route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV6OperationsAddCommunity
 {
@@ -345,7 +345,7 @@ public partial class V1BGPFilterSpecExportV6OperationsAddCommunity
 }
 
 /// <summary>PrependASPath prepends the specified AS numbers to the route&apos;s AS path.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV6OperationsPrependASPath
 {
@@ -362,7 +362,7 @@ public partial class V1BGPFilterSpecExportV6OperationsPrependASPath
 /// SetPriority sets the route&apos;s priority (metric), in the same units as the
 /// ...RoutePriority fields in FelixConfiguration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV6OperationsSetPriority
 {
@@ -378,7 +378,7 @@ public partial class V1BGPFilterSpecExportV6OperationsSetPriority
 /// BGPFilterOperation is a discriminated union representing a single route modification.
 /// Exactly one field must be set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV6Operations
 {
@@ -402,7 +402,7 @@ public partial class V1BGPFilterSpecExportV6Operations
 /// If non-empty, this filter rule will only apply to routes being imported from or exported
 /// to a BGP peer of the specified type.  If empty, the rule applies to all peers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecExportV6PeerTypeEnum>))]
 public enum V1BGPFilterSpecExportV6PeerTypeEnum
 {
@@ -420,7 +420,7 @@ public enum V1BGPFilterSpecExportV6PeerTypeEnum
 /// PrefixLength is ignored.  If PrefixLength is nil and CIDR is set, the CIDR&apos;s own
 /// prefix length is used as the minimum and /128 (for V6) as the maximum.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV6PrefixLength
 {
@@ -437,7 +437,7 @@ public partial class V1BGPFilterSpecExportV6PrefixLength
 /// For import rules, this field is redundant because imported routes are by definition
 /// from BGP peers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecExportV6SourceEnum>))]
 public enum V1BGPFilterSpecExportV6SourceEnum
 {
@@ -449,7 +449,7 @@ public enum V1BGPFilterSpecExportV6SourceEnum
 /// BGPFilterRuleV6 defines a BGP filter rule consisting of match criteria, a terminal action,
 /// and optional operations to apply to matching routes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecExportV6
 {
@@ -541,7 +541,7 @@ public partial class V1BGPFilterSpecExportV6
     public V1BGPFilterSpecExportV6SourceEnum? Source { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecImportV4ActionEnum>))]
 public enum V1BGPFilterSpecImportV4ActionEnum
 {
@@ -558,7 +558,7 @@ public enum V1BGPFilterSpecImportV4ActionEnum
 /// peer (e.g. on a route reflector re-advertising to an eBGP peer) or added locally
 /// by an import filter or an earlier export rule&apos;s AddCommunity operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV4Communities
 {
@@ -573,7 +573,7 @@ public partial class V1BGPFilterSpecImportV4Communities
 /// &quot;NotEqual&quot; and &quot;NotIn&quot; are their negations.  Only meaningful when CIDR is also specified.
 /// Required when CIDR is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecImportV4MatchOperatorEnum>))]
 public enum V1BGPFilterSpecImportV4MatchOperatorEnum
 {
@@ -588,7 +588,7 @@ public enum V1BGPFilterSpecImportV4MatchOperatorEnum
 }
 
 /// <summary>AddCommunity adds the specified BGP community to the route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV4OperationsAddCommunity
 {
@@ -598,7 +598,7 @@ public partial class V1BGPFilterSpecImportV4OperationsAddCommunity
 }
 
 /// <summary>PrependASPath prepends the specified AS numbers to the route&apos;s AS path.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV4OperationsPrependASPath
 {
@@ -615,7 +615,7 @@ public partial class V1BGPFilterSpecImportV4OperationsPrependASPath
 /// SetPriority sets the route&apos;s priority (metric), in the same units as the
 /// ...RoutePriority fields in FelixConfiguration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV4OperationsSetPriority
 {
@@ -631,7 +631,7 @@ public partial class V1BGPFilterSpecImportV4OperationsSetPriority
 /// BGPFilterOperation is a discriminated union representing a single route modification.
 /// Exactly one field must be set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV4Operations
 {
@@ -655,7 +655,7 @@ public partial class V1BGPFilterSpecImportV4Operations
 /// If non-empty, this filter rule will only apply to routes being imported from or exported
 /// to a BGP peer of the specified type.  If empty, the rule applies to all peers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecImportV4PeerTypeEnum>))]
 public enum V1BGPFilterSpecImportV4PeerTypeEnum
 {
@@ -673,7 +673,7 @@ public enum V1BGPFilterSpecImportV4PeerTypeEnum
 /// PrefixLength is ignored.  If PrefixLength is nil and CIDR is set, the CIDR&apos;s own
 /// prefix length is used as the minimum and /32 (for V4) as the maximum.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV4PrefixLength
 {
@@ -690,7 +690,7 @@ public partial class V1BGPFilterSpecImportV4PrefixLength
 /// For import rules, this field is redundant because imported routes are by definition
 /// from BGP peers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecImportV4SourceEnum>))]
 public enum V1BGPFilterSpecImportV4SourceEnum
 {
@@ -702,7 +702,7 @@ public enum V1BGPFilterSpecImportV4SourceEnum
 /// BGPFilterRuleV4 defines a BGP filter rule consisting of match criteria, a terminal action,
 /// and optional operations to apply to matching routes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV4
 {
@@ -794,7 +794,7 @@ public partial class V1BGPFilterSpecImportV4
     public V1BGPFilterSpecImportV4SourceEnum? Source { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecImportV6ActionEnum>))]
 public enum V1BGPFilterSpecImportV6ActionEnum
 {
@@ -811,7 +811,7 @@ public enum V1BGPFilterSpecImportV6ActionEnum
 /// peer (e.g. on a route reflector re-advertising to an eBGP peer) or added locally
 /// by an import filter or an earlier export rule&apos;s AddCommunity operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV6Communities
 {
@@ -826,7 +826,7 @@ public partial class V1BGPFilterSpecImportV6Communities
 /// &quot;NotEqual&quot; and &quot;NotIn&quot; are their negations.  Only meaningful when CIDR is also specified.
 /// Required when CIDR is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecImportV6MatchOperatorEnum>))]
 public enum V1BGPFilterSpecImportV6MatchOperatorEnum
 {
@@ -841,7 +841,7 @@ public enum V1BGPFilterSpecImportV6MatchOperatorEnum
 }
 
 /// <summary>AddCommunity adds the specified BGP community to the route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV6OperationsAddCommunity
 {
@@ -851,7 +851,7 @@ public partial class V1BGPFilterSpecImportV6OperationsAddCommunity
 }
 
 /// <summary>PrependASPath prepends the specified AS numbers to the route&apos;s AS path.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV6OperationsPrependASPath
 {
@@ -868,7 +868,7 @@ public partial class V1BGPFilterSpecImportV6OperationsPrependASPath
 /// SetPriority sets the route&apos;s priority (metric), in the same units as the
 /// ...RoutePriority fields in FelixConfiguration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV6OperationsSetPriority
 {
@@ -884,7 +884,7 @@ public partial class V1BGPFilterSpecImportV6OperationsSetPriority
 /// BGPFilterOperation is a discriminated union representing a single route modification.
 /// Exactly one field must be set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV6Operations
 {
@@ -908,7 +908,7 @@ public partial class V1BGPFilterSpecImportV6Operations
 /// If non-empty, this filter rule will only apply to routes being imported from or exported
 /// to a BGP peer of the specified type.  If empty, the rule applies to all peers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecImportV6PeerTypeEnum>))]
 public enum V1BGPFilterSpecImportV6PeerTypeEnum
 {
@@ -926,7 +926,7 @@ public enum V1BGPFilterSpecImportV6PeerTypeEnum
 /// PrefixLength is ignored.  If PrefixLength is nil and CIDR is set, the CIDR&apos;s own
 /// prefix length is used as the minimum and /128 (for V6) as the maximum.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV6PrefixLength
 {
@@ -943,7 +943,7 @@ public partial class V1BGPFilterSpecImportV6PrefixLength
 /// For import rules, this field is redundant because imported routes are by definition
 /// from BGP peers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1BGPFilterSpecImportV6SourceEnum>))]
 public enum V1BGPFilterSpecImportV6SourceEnum
 {
@@ -955,7 +955,7 @@ public enum V1BGPFilterSpecImportV6SourceEnum
 /// BGPFilterRuleV6 defines a BGP filter rule consisting of match criteria, a terminal action,
 /// and optional operations to apply to matching routes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpecImportV6
 {
@@ -1048,7 +1048,7 @@ public partial class V1BGPFilterSpecImportV6
 }
 
 /// <summary>BGPFilterSpec contains the IPv4 and IPv6 filter rules of the BGP Filter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1BGPFilterSpec
 {
@@ -1069,7 +1069,7 @@ public partial class V1BGPFilterSpec
     public IList<V1BGPFilterSpecImportV6>? ImportV6 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1BGPFilter : IKubernetesObject<V1ObjectMeta>, ISpec<V1BGPFilterSpec?>

@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1KubeControllersConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1KubeControllersConfiguration>
@@ -36,7 +36,7 @@ public partial class V1KubeControllersConfigurationList : IKubernetesObject<V1Li
 }
 
 /// <summary>AssignIPs controls which LoadBalancer Service gets IP assigned from Calico IPAM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationSpecControllersLoadBalancerAssignIPsEnum>))]
 public enum V1KubeControllersConfigurationSpecControllersLoadBalancerAssignIPsEnum
 {
@@ -47,7 +47,7 @@ public enum V1KubeControllersConfigurationSpecControllersLoadBalancerAssignIPsEn
 }
 
 /// <summary>LoadBalancer enables and configures the LoadBalancer controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersLoadBalancer
 {
@@ -60,7 +60,7 @@ public partial class V1KubeControllersConfigurationSpecControllersLoadBalancer
 /// PolicyNameMigrator enables or disables the Policy Name Migrator, which migrates
 /// old-style Calico backend policy names to use v3 style names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationSpecControllersMigrationPolicyNameMigratorEnum>))]
 public enum V1KubeControllersConfigurationSpecControllersMigrationPolicyNameMigratorEnum
 {
@@ -71,7 +71,7 @@ public enum V1KubeControllersConfigurationSpecControllersMigrationPolicyNameMigr
 }
 
 /// <summary>Migration enables and configures migration controllers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersMigration
 {
@@ -84,7 +84,7 @@ public partial class V1KubeControllersConfigurationSpecControllersMigration
 }
 
 /// <summary>Namespace enables and configures the namespace controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersNamespace
 {
@@ -97,7 +97,7 @@ public partial class V1KubeControllersConfigurationSpecControllersNamespace
 /// AutoCreate enables automatic creation of host endpoints for every node. [Default: Disabled]
 /// Valid values are: &quot;Enabled&quot;, &quot;Disabled&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationSpecControllersNodeHostEndpointAutoCreateEnum>))]
 public enum V1KubeControllersConfigurationSpecControllersNodeHostEndpointAutoCreateEnum
 {
@@ -107,7 +107,7 @@ public enum V1KubeControllersConfigurationSpecControllersNodeHostEndpointAutoCre
     Disabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersNodeHostEndpointTemplates
 {
@@ -140,7 +140,7 @@ public partial class V1KubeControllersConfigurationSpecControllersNodeHostEndpoi
 }
 
 /// <summary>HostEndpoint controls syncing nodes to host endpoints. Disabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersNodeHostEndpoint
 {
@@ -167,7 +167,7 @@ public partial class V1KubeControllersConfigurationSpecControllersNodeHostEndpoi
 /// SyncLabels controls whether to copy Kubernetes node labels to Calico nodes. [Default: Enabled]
 /// Valid values are: &quot;Enabled&quot;, &quot;Disabled&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationSpecControllersNodeSyncLabelsEnum>))]
 public enum V1KubeControllersConfigurationSpecControllersNodeSyncLabelsEnum
 {
@@ -178,7 +178,7 @@ public enum V1KubeControllersConfigurationSpecControllersNodeSyncLabelsEnum
 }
 
 /// <summary>Node enables and configures the node controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersNode
 {
@@ -206,7 +206,7 @@ public partial class V1KubeControllersConfigurationSpecControllersNode
 }
 
 /// <summary>Policy enables and configures the policy controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersPolicy
 {
@@ -216,7 +216,7 @@ public partial class V1KubeControllersConfigurationSpecControllersPolicy
 }
 
 /// <summary>ServiceAccount enables and configures the service account controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersServiceAccount
 {
@@ -226,7 +226,7 @@ public partial class V1KubeControllersConfigurationSpecControllersServiceAccount
 }
 
 /// <summary>WorkloadEndpoint enables and configures the workload endpoint controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllersWorkloadEndpoint
 {
@@ -236,7 +236,7 @@ public partial class V1KubeControllersConfigurationSpecControllersWorkloadEndpoi
 }
 
 /// <summary>Controllers enables and configures individual Kubernetes controllers</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpecControllers
 {
@@ -273,7 +273,7 @@ public partial class V1KubeControllersConfigurationSpecControllers
 /// HealthChecks enables or disables support for health checks [Default: Enabled]
 /// Valid values are: &quot;Enabled&quot;, &quot;Disabled&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationSpecHealthChecksEnum>))]
 public enum V1KubeControllersConfigurationSpecHealthChecksEnum
 {
@@ -287,7 +287,7 @@ public enum V1KubeControllersConfigurationSpecHealthChecksEnum
 /// LogSeverityScreen is the log severity above which logs are sent to the stdout. [Default: Info]
 /// Valid values are: &quot;None&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationSpecLogSeverityScreenEnum>))]
 public enum V1KubeControllersConfigurationSpecLogSeverityScreenEnum
 {
@@ -308,7 +308,7 @@ public enum V1KubeControllersConfigurationSpecLogSeverityScreenEnum
 }
 
 /// <summary>KubeControllersConfigurationSpec contains the values of the Kubernetes controllers configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationSpec
 {
@@ -351,7 +351,7 @@ public partial class V1KubeControllersConfigurationSpec
 }
 
 /// <summary>AssignIPs controls which LoadBalancer Service gets IP assigned from Calico IPAM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationStatusRunningConfigControllersLoadBalancerAssignIPsEnum>))]
 public enum V1KubeControllersConfigurationStatusRunningConfigControllersLoadBalancerAssignIPsEnum
 {
@@ -362,7 +362,7 @@ public enum V1KubeControllersConfigurationStatusRunningConfigControllersLoadBala
 }
 
 /// <summary>LoadBalancer enables and configures the LoadBalancer controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersLoadBalancer
 {
@@ -375,7 +375,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 /// PolicyNameMigrator enables or disables the Policy Name Migrator, which migrates
 /// old-style Calico backend policy names to use v3 style names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationStatusRunningConfigControllersMigrationPolicyNameMigratorEnum>))]
 public enum V1KubeControllersConfigurationStatusRunningConfigControllersMigrationPolicyNameMigratorEnum
 {
@@ -386,7 +386,7 @@ public enum V1KubeControllersConfigurationStatusRunningConfigControllersMigratio
 }
 
 /// <summary>Migration enables and configures migration controllers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersMigration
 {
@@ -399,7 +399,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 }
 
 /// <summary>Namespace enables and configures the namespace controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersNamespace
 {
@@ -412,7 +412,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 /// AutoCreate enables automatic creation of host endpoints for every node. [Default: Disabled]
 /// Valid values are: &quot;Enabled&quot;, &quot;Disabled&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationStatusRunningConfigControllersNodeHostEndpointAutoCreateEnum>))]
 public enum V1KubeControllersConfigurationStatusRunningConfigControllersNodeHostEndpointAutoCreateEnum
 {
@@ -422,7 +422,7 @@ public enum V1KubeControllersConfigurationStatusRunningConfigControllersNodeHost
     Disabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersNodeHostEndpointTemplates
 {
@@ -455,7 +455,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 }
 
 /// <summary>HostEndpoint controls syncing nodes to host endpoints. Disabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersNodeHostEndpoint
 {
@@ -482,7 +482,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 /// SyncLabels controls whether to copy Kubernetes node labels to Calico nodes. [Default: Enabled]
 /// Valid values are: &quot;Enabled&quot;, &quot;Disabled&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationStatusRunningConfigControllersNodeSyncLabelsEnum>))]
 public enum V1KubeControllersConfigurationStatusRunningConfigControllersNodeSyncLabelsEnum
 {
@@ -493,7 +493,7 @@ public enum V1KubeControllersConfigurationStatusRunningConfigControllersNodeSync
 }
 
 /// <summary>Node enables and configures the node controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersNode
 {
@@ -521,7 +521,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 }
 
 /// <summary>Policy enables and configures the policy controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersPolicy
 {
@@ -531,7 +531,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 }
 
 /// <summary>ServiceAccount enables and configures the service account controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersServiceAccount
 {
@@ -541,7 +541,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 }
 
 /// <summary>WorkloadEndpoint enables and configures the workload endpoint controller. Enabled by default, set to nil to disable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllersWorkloadEndpoint
 {
@@ -551,7 +551,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 }
 
 /// <summary>Controllers enables and configures individual Kubernetes controllers</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfigControllers
 {
@@ -588,7 +588,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfigController
 /// HealthChecks enables or disables support for health checks [Default: Enabled]
 /// Valid values are: &quot;Enabled&quot;, &quot;Disabled&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationStatusRunningConfigHealthChecksEnum>))]
 public enum V1KubeControllersConfigurationStatusRunningConfigHealthChecksEnum
 {
@@ -602,7 +602,7 @@ public enum V1KubeControllersConfigurationStatusRunningConfigHealthChecksEnum
 /// LogSeverityScreen is the log severity above which logs are sent to the stdout. [Default: Info]
 /// Valid values are: &quot;None&quot;, &quot;Debug&quot;, &quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;, &quot;Fatal&quot;, &quot;Panic&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1KubeControllersConfigurationStatusRunningConfigLogSeverityScreenEnum>))]
 public enum V1KubeControllersConfigurationStatusRunningConfigLogSeverityScreenEnum
 {
@@ -626,7 +626,7 @@ public enum V1KubeControllersConfigurationStatusRunningConfigLogSeverityScreenEn
 /// RunningConfig contains the effective config that is running in the kube-controllers pod, after
 /// merging the API resource with any environment variables.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatusRunningConfig
 {
@@ -673,7 +673,7 @@ public partial class V1KubeControllersConfigurationStatusRunningConfig
 /// be able to see the actual config that was applied, which can be modified by environment variables on the
 /// kube-controllers process.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1KubeControllersConfigurationStatus
 {
@@ -692,7 +692,7 @@ public partial class V1KubeControllersConfigurationStatus
     public V1KubeControllersConfigurationStatusRunningConfig? RunningConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1KubeControllersConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1KubeControllersConfigurationSpec?>, IStatus<V1KubeControllersConfigurationStatus?>

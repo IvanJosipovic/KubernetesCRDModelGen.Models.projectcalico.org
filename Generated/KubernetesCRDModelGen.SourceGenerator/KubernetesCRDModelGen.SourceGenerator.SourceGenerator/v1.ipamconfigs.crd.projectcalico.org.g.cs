@@ -9,7 +9,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.crd.projectcalico.org;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1IPAMConfigList : IKubernetesObject<V1ListMeta>, IItems<V1IPAMConfig>
@@ -47,7 +47,7 @@ public partial class V1IPAMConfigList : IKubernetesObject<V1ListMeta>, IItems<V1
 /// when this is set to VMAddressPersistenceDisabled and will result in an error.
 /// If nil, defaults to VMAddressPersistenceEnabled (IP persistence enabled if not specified).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1IPAMConfigSpecKubeVirtVMAddressPersistenceEnum>))]
 public enum V1IPAMConfigSpecKubeVirtVMAddressPersistenceEnum
 {
@@ -58,7 +58,7 @@ public enum V1IPAMConfigSpecKubeVirtVMAddressPersistenceEnum
 }
 
 /// <summary>IPAMConfigSpec contains the specification for an IPAMConfig resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1IPAMConfigSpec
 {
@@ -91,7 +91,7 @@ public partial class V1IPAMConfigSpec
     public required bool StrictAffinity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1IPAMConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1IPAMConfigSpec?>
