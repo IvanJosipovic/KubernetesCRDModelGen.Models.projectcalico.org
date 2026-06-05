@@ -1281,7 +1281,7 @@ public partial class V1FelixConfigurationSpec
     /// [Default: 0xffff0000]
     /// </summary>
     [JsonPropertyName("iptablesMarkMask")]
-    public int? IptablesMarkMask { get; set; }
+    public long? IptablesMarkMask { get; set; }
 
     /// <summary>
     /// This parameter can be used to limit the host interfaces on which Calico will apply SNAT to traffic leaving a
@@ -1525,7 +1525,7 @@ public partial class V1FelixConfigurationSpec
     /// [Default: 0xffff0000]
     /// </summary>
     [JsonPropertyName("nftablesMarkMask")]
-    public int? NftablesMarkMask { get; set; }
+    public long? NftablesMarkMask { get; set; }
 
     /// <summary>NFTablesMode configures nftables support in Felix. [Default: Auto]</summary>
     [JsonPropertyName("nftablesMode")]
