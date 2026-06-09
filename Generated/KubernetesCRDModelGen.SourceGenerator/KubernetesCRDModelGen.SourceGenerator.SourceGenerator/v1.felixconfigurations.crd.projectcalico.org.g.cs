@@ -386,6 +386,23 @@ public enum V1FelixConfigurationSpecIstioAmbientModeEnum
 }
 
 /// <summary>
+/// LocalSubnetL2Reachability controls whether Felix automatically responds to
+/// ARP (IPv4) and NDP (IPv6) requests on host interfaces for local pod IPs and
+/// selected LoadBalancer VIPs that fall within the same subnet as the host
+/// interface. When set to PodsAndLoadBalancers, pods and LB VIPs on the host
+/// subnet are reachable from the local L2 segment without BGP. [Default: Disabled]
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1FelixConfigurationSpecLocalSubnetL2ReachabilityEnum>))]
+public enum V1FelixConfigurationSpecLocalSubnetL2ReachabilityEnum
+{
+    [EnumMember(Value = "Disabled"), JsonStringEnumMemberName("Disabled")]
+    Disabled,
+    [EnumMember(Value = "PodsAndLoadBalancers"), JsonStringEnumMemberName("PodsAndLoadBalancers")]
+    PodsAndLoadBalancers
+}
+
+/// <summary>
 /// When a IP pool setting `natOutgoing` is true, packets sent from Calico networked containers in this IP pool to destinations will be masqueraded.
 /// Configure which type of destinations is excluded from being masqueraded.
 /// - IPPoolsOnly: destinations outside of this IP pool will be masqueraded.
@@ -1379,6 +1396,16 @@ public partial class V1FelixConfigurationSpec
     /// </summary>
     [JsonPropertyName("liveMigrationRouteConvergenceTime")]
     public string? LiveMigrationRouteConvergenceTime { get; set; }
+
+    /// <summary>
+    /// LocalSubnetL2Reachability controls whether Felix automatically responds to
+    /// ARP (IPv4) and NDP (IPv6) requests on host interfaces for local pod IPs and
+    /// selected LoadBalancer VIPs that fall within the same subnet as the host
+    /// interface. When set to PodsAndLoadBalancers, pods and LB VIPs on the host
+    /// subnet are reachable from the local L2 segment without BGP. [Default: Disabled]
+    /// </summary>
+    [JsonPropertyName("localSubnetL2Reachability")]
+    public V1FelixConfigurationSpecLocalSubnetL2ReachabilityEnum? LocalSubnetL2Reachability { get; set; }
 
     /// <summary>
     /// LogActionRateLimit sets the rate of hitting a Log action. The value must be in the format &quot;N/unit&quot;,
