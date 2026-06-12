@@ -1408,6 +1408,17 @@ public partial class V1FelixConfigurationSpec
     public V1FelixConfigurationSpecLocalSubnetL2ReachabilityEnum? LocalSubnetL2Reachability { get; set; }
 
     /// <summary>
+    /// LocalSubnetL2ReachabilityRefreshInterval controls how often Felix re-announces
+    /// (gratuitous ARP / unsolicited NA) every IP it proxies ARP/NDP for when
+    /// LocalSubnetL2Reachability is enabled, keeping neighbor caches and switch
+    /// forwarding tables warm even when the set of proxied IPs is unchanged. Set to 0
+    /// to disable periodic re-announcement, leaving only the one-shot announce when an
+    /// IP is added. [Default: 120s]
+    /// </summary>
+    [JsonPropertyName("localSubnetL2ReachabilityRefreshInterval")]
+    public string? LocalSubnetL2ReachabilityRefreshInterval { get; set; }
+
+    /// <summary>
     /// LogActionRateLimit sets the rate of hitting a Log action. The value must be in the format &quot;N/unit&quot;,
     /// where N is a number and unit is one of: second, minute, hour, or day. For example: &quot;10/second&quot; or &quot;100/hour&quot;.
     /// </summary>
